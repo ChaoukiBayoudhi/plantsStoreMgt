@@ -5,6 +5,7 @@ import lombok.*;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.math.BigDecimal;
 
 @EqualsAndHashCode
@@ -13,6 +14,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Data
 @Entity
+@Table(name="plants")
 public class Plant {
     @Id
     @GeneratedValue
